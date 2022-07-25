@@ -1,0 +1,40 @@
+{
+  "name": "cypress-advanced",
+  "version": "1.0.0",
+  "description": "Advanced of cypress testing",
+  "main": "index.js",
+  "scripts": {
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "lint": "eslint cypress/**/*.js",
+    "cy:open": "npx cypress open",
+    "cy:e2e": "cypress run --record --tag 'full'",
+    "cy:e2e-smoke": "cypress run --record --tag 'smoke' --env grepTags=@smoke",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/januariod/cypress-advanced.git"
+  },
+  "keywords": [
+    "cypress",
+    "advanced",
+    "js",
+    "automation",
+    "qa"
+  ],
+  "author": "Daniel Januario",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/januariod/cypress-advanced/issues"
+  },
+  "homepage": "https://github.com/januariod/cypress-advanced#readme",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "cypress-grep": "^2.6.1",
+    "cypress-localstorage-commands": "^2.1.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "faker": "=5.5.3",
+    "husky": "^8.0.1"
+  }
+}
